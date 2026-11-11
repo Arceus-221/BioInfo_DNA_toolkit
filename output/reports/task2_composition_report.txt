@@ -1,0 +1,63 @@
+TASK 2 - NUCLEOTIDE COMPOSITION SUMMARY
+============================================================
+Convention: GC/AT content, skews and entropy use ONLY unambiguous A,T,G,C; L = A+T+G+C is the denominator (not total length). Ambiguous symbols are counted separately; undefined values are reported as NA.
+
+Sequence ID: seq_01_normal
+  Total length          : 376
+  Counts A/T/G/C        : 107/97/82/90   (L = 376)
+  Percentages A/T/G/C   : 28.46/25.80/21.81/23.94 %
+  GC content            : 45.74 %
+  AT content            : 54.26 %
+  GC skew               : -0.0465
+  AT skew               : 0.0490
+  Shannon entropy       : 1.9931 bits
+  Ambiguous symbols     : 0 (0.00 % of total length)
+------------------------------------------------------------
+Sequence ID: seq_02_lowercase
+  Total length          : 400
+  Counts A/T/G/C        : 113/97/85/105   (L = 400)
+  Percentages A/T/G/C   : 28.25/24.25/21.25/26.25 %
+  GC content            : 47.50 %
+  AT content            : 52.50 %
+  GC skew               : -0.1053
+  AT skew               : 0.0762
+  Shannon entropy       : 1.9922 bits
+  Ambiguous symbols     : 0 (0.00 % of total length)
+------------------------------------------------------------
+Sequence ID: seq_03_ambiguous
+  Total length          : 132
+  Counts A/T/G/C        : 32/32/24/32   (L = 120)
+  Percentages A/T/G/C   : 26.67/26.67/20.00/26.67 %
+  GC content            : 46.67 %
+  AT content            : 53.33 %
+  GC skew               : -0.1429
+  AT skew               : 0.0000
+  Shannon entropy       : 1.9899 bits
+  Ambiguous symbols     : 12 (9.09 % of total length)
+------------------------------------------------------------
+Sequence ID: seq_05_repeats
+  Total length          : 176
+  Counts A/T/G/C        : 56/45/39/36   (L = 176)
+  Percentages A/T/G/C   : 31.82/25.57/22.16/20.45 %
+  GC content            : 42.61 %
+  AT content            : 57.39 %
+  GC skew               : 0.0400
+  AT skew               : 0.1089
+  Shannon entropy       : 1.9788 bits
+  Ambiguous symbols     : 0 (0.00 % of total length)
+------------------------------------------------------------
+Sequence ID: seq_06_short
+  Total length          : 12
+  Counts A/T/G/C        : 3/3/3/3   (L = 12)
+  Percentages A/T/G/C   : 25.00/25.00/25.00/25.00 %
+  GC content            : 50.00 %
+  AT content            : 50.00 %
+  GC skew               : 0.0000
+  AT skew               : 0.0000
+  Shannon entropy       : 2.0000 bits
+  Ambiguous symbols     : 0 (0.00 % of total length)
+------------------------------------------------------------
+
+Sliding window: size=100, step=50, complete windows only; coordinates 1-based inclusive.
+  Note: seq_06_short (12 bp) is shorter than window 100; used window=3, step=1 for this sequence.
+Plots written: 20 PNG file(s) in output/plots/

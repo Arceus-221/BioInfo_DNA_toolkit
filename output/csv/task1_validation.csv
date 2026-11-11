@@ -1,0 +1,7 @@
+sequence_id,length,status,ambiguous_count,ambiguous_symbols,invalid_count,invalid_characters
+seq_01_normal,376,Valid,0,,0,
+seq_02_lowercase,400,Valid,0,,0,
+seq_03_ambiguous,132,Valid with ambiguity,12,B:1;D:1;H:1;K:1;M:1;N:2;R:1;S:1;V:1;W:1;Y:1,0,
+seq_04_invalid,69,Invalid,1,N:1,2,X@6;Z@49
+seq_05_repeats,176,Valid,0,,0,
+seq_06_short,12,Valid,0,,0,

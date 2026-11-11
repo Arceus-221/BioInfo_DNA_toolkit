@@ -1,0 +1,392 @@
+DNA TOOLKIT COMBINED REPORT - generated 2026-11-11 18:56:16
+Sequences analysed: seq_01_normal, seq_02_lowercase, seq_03_ambiguous, seq_04_invalid, seq_05_repeats, seq_06_short
+
+##### Task 1 - Validation #####
+TASK 1 - SEQUENCE VALIDATION REPORT
+============================================================
+Alphabet: 15 IUPAC DNA symbols (A,T,G,C + R,Y,S,W,K,M,B,D,H,V,N).
+Ambiguous symbols are VALID; characters outside the alphabet are INVALID.
+Positions are 1-based.
+
+Sequence ID : seq_01_normal
+Description : Balanced random sequence
+Length      : 376
+Status      : Valid
+Ambiguous   : 0
+Invalid     : none
+------------------------------------------------------------
+Sequence ID : seq_02_lowercase
+Description : GC-rich then AT-rich, lowercase
+Length      : 400
+Status      : Valid
+Ambiguous   : 0
+Invalid     : none
+------------------------------------------------------------
+Sequence ID : seq_03_ambiguous
+Description : Contains IUPAC ambiguity codes
+Length      : 132
+Status      : Valid with ambiguity
+Ambiguous   : 12 symbol(s) [Bx1, Dx1, Hx1, Kx1, Mx1, Nx2, Rx1, Sx1, Vx1, Wx1, Yx1] at N@61, R@62, Y@63, K@64, M@65, S@66, W@67, B@68, D@69, H@70, V@71, N@72
+Invalid     : none
+------------------------------------------------------------
+Sequence ID : seq_04_invalid
+Description : Contains invalid characters X and Z
+Length      : 69
+Status      : Invalid
+Ambiguous   : 1 symbol(s) [Nx1] at N@5
+Invalid     : 2 character(s): 'X' at position 6, 'Z' at position 49
+------------------------------------------------------------
+Sequence ID : seq_05_repeats
+Description : Tandem repeats, palindromes, ORF
+Length      : 176
+Status      : Valid
+Ambiguous   : 0
+Invalid     : none
+------------------------------------------------------------
+Sequence ID : seq_06_short
+Description : Short sequence
+Length      : 12
+Status      : Valid
+Ambiguous   : 0
+Invalid     : none
+------------------------------------------------------------
+
+##### Task 2 - Composition #####
+TASK 2 - NUCLEOTIDE COMPOSITION SUMMARY
+============================================================
+Convention: GC/AT content, skews and entropy use ONLY unambiguous A,T,G,C; L = A+T+G+C is the denominator (not total length). Ambiguous symbols are counted separately; undefined values are reported as NA.
+
+Sequence ID: seq_01_normal
+  Total length          : 376
+  Counts A/T/G/C        : 107/97/82/90   (L = 376)
+  Percentages A/T/G/C   : 28.46/25.80/21.81/23.94 %
+  GC content            : 45.74 %
+  AT content            : 54.26 %
+  GC skew               : -0.0465
+  AT skew               : 0.0490
+  Shannon entropy       : 1.9931 bits
+  Ambiguous symbols     : 0 (0.00 % of total length)
+------------------------------------------------------------
+Sequence ID: seq_02_lowercase
+  Total length          : 400
+  Counts A/T/G/C        : 113/97/85/105   (L = 400)
+  Percentages A/T/G/C   : 28.25/24.25/21.25/26.25 %
+  GC content            : 47.50 %
+  AT content            : 52.50 %
+  GC skew               : -0.1053
+  AT skew               : 0.0762
+  Shannon entropy       : 1.9922 bits
+  Ambiguous symbols     : 0 (0.00 % of total length)
+------------------------------------------------------------
+Sequence ID: seq_03_ambiguous
+  Total length          : 132
+  Counts A/T/G/C        : 32/32/24/32   (L = 120)
+  Percentages A/T/G/C   : 26.67/26.67/20.00/26.67 %
+  GC content            : 46.67 %
+  AT content            : 53.33 %
+  GC skew               : -0.1429
+  AT skew               : 0.0000
+  Shannon entropy       : 1.9899 bits
+  Ambiguous symbols     : 12 (9.09 % of total length)
+------------------------------------------------------------
+Sequence ID: seq_05_repeats
+  Total length          : 176
+  Counts A/T/G/C        : 56/45/39/36   (L = 176)
+  Percentages A/T/G/C   : 31.82/25.57/22.16/20.45 %
+  GC content            : 42.61 %
+  AT content            : 57.39 %
+  GC skew               : 0.0400
+  AT skew               : 0.1089
+  Shannon entropy       : 1.9788 bits
+  Ambiguous symbols     : 0 (0.00 % of total length)
+------------------------------------------------------------
+Sequence ID: seq_06_short
+  Total length          : 12
+  Counts A/T/G/C        : 3/3/3/3   (L = 12)
+  Percentages A/T/G/C   : 25.00/25.00/25.00/25.00 %
+  GC content            : 50.00 %
+  AT content            : 50.00 %
+  GC skew               : 0.0000
+  AT skew               : 0.0000
+  Shannon entropy       : 2.0000 bits
+  Ambiguous symbols     : 0 (0.00 % of total length)
+------------------------------------------------------------
+
+Sliding window: size=100, step=50, complete windows only; coordinates 1-based inclusive.
+  Note: seq_06_short (12 bp) is shorter than window 100; used window=3, step=1 for this sequence.
+Plots written: 20 PNG file(s) in output/plots/
+
+##### Task 3 - Transformation #####
+TASK 3 - DNA SEQUENCE TRANSFORMATION REPORT
+============================================================
+Sequence ID: seq_01_normal
+  Original (5'->3')   : CAGAGCAGACAACTAAGTGCTATCAACTAGGCGAAAGCCGCCTGAGGTGCTACTACAGTGTCGGGCTTCGAGGTTCCGACAAATAACTACGTTTCCCTTAAAACGCACCGTGGGGATTTTCCAGAAAACAAAACATGACCCATTCCAACCTAATGAGAGTTGCCATGTCATTTTTGAGCAACCGTCTTTCAAAAGTTCGTAGTTTCATCTTCCTGAAATTATTGCGAATGGTCTTACCAGCCATCCGTCTGAATTCGGGACAATACGGCGGTAGACTGGTTCGGGGCGCTGTTCGTTAACAAAGTTAGGATTATCCTTACGCACGAGCACGGATTTACATCACTTCATGGAAGCATGTATATCCGTCAGAAAAACC
+  Complement          : GTCTCGTCTGTTGATTCACGATAGTTGATCCGCTTTCGGCGGACTCCACGATGATGTCACAGCCCGAAGCTCCAAGGCTGTTTATTGATGCAAAGGGAATTTTGCGTGGCACCCCTAAAAGGTCTTTTGTTTTGTACTGGGTAAGGTTGGATTACTCTCAACGGTACAGTAAAAACTCGTTGGCAGAAAGTTTTCAAGCATCAAAGTAGAAGGACTTTAATAACGCTTACCAGAATGGTCGGTAGGCAGACTTAAGCCCTGTTATGCCGCCATCTGACCAAGCCCCGCGACAAGCAATTGTTTCAATCCTAATAGGAATGCGTGCTCGTGCCTAAATGTAGTGAAGTACCTTCGTACATATAGGCAGTCTTTTTGG
+  Reverse             : CCAAAAAGACTGCCTATATGTACGAAGGTACTTCACTACATTTAGGCACGAGCACGCATTCCTATTAGGATTGAAACAATTGCTTGTCGCGGGGCTTGGTCAGATGGCGGCATAACAGGGCTTAAGTCTGCCTACCGACCATTCTGGTAAGCGTTATTAAAGTCCTTCTACTTTGATGCTTGAAAACTTTCTGCCAACGAGTTTTTACTGTACCGTTGAGAGTAATCCAACCTTACCCAGTACAAAACAAAAGACCTTTTAGGGGTGCCACGCAAAATTCCCTTTGCATCAATAAACAGCCTTGGAGCTTCGGGCTGTGACATCATCGTGGAGTCCGCCGAAAGCGGATCAACTATCGTGAATCAACAGACGAGAC
+  Reverse complement  : GGTTTTTCTGACGGATATACATGCTTCCATGAAGTGATGTAAATCCGTGCTCGTGCGTAAGGATAATCCTAACTTTGTTAACGAACAGCGCCCCGAACCAGTCTACCGCCGTATTGTCCCGAATTCAGACGGATGGCTGGTAAGACCATTCGCAATAATTTCAGGAAGATGAAACTACGAACTTTTGAAAGACGGTTGCTCAAAAATGACATGGCAACTCTCATTAGGTTGGAATGGGTCATGTTTTGTTTTCTGGAAAATCCCCACGGTGCGTTTTAAGGGAAACGTAGTTATTTGTCGGAACCTCGAAGCCCGACACTGTAGTAGCACCTCAGGCGGCTTTCGCCTAGTTGATAGCACTTAGTTGTCTGCTCTG
+  RNA (T->U)          : CAGAGCAGACAACUAAGUGCUAUCAACUAGGCGAAAGCCGCCUGAGGUGCUACUACAGUGUCGGGCUUCGAGGUUCCGACAAAUAACUACGUUUCCCUUAAAACGCACCGUGGGGAUUUUCCAGAAAACAAAACAUGACCCAUUCCAACCUAAUGAGAGUUGCCAUGUCAUUUUUGAGCAACCGUCUUUCAAAAGUUCGUAGUUUCAUCUUCCUGAAAUUAUUGCGAAUGGUCUUACCAGCCAUCCGUCUGAAUUCGGGACAAUACGGCGGUAGACUGGUUCGGGGCGCUGUUCGUUAACAAAGUUAGGAUUAUCCUUACGCACGAGCACGGAUUUACAUCACUUCAUGGAAGCAUGUAUAUCCGUCAGAAAAACC
+  DNA recovered (U->T): CAGAGCAGACAACTAAGTGCTATCAACTAGGCGAAAGCCGCCTGAGGTGCTACTACAGTGTCGGGCTTCGAGGTTCCGACAAATAACTACGTTTCCCTTAAAACGCACCGTGGGGATTTTCCAGAAAACAAAACATGACCCATTCCAACCTAATGAGAGTTGCCATGTCATTTTTGAGCAACCGTCTTTCAAAAGTTCGTAGTTTCATCTTCCTGAAATTATTGCGAATGGTCTTACCAGCCATCCGTCTGAATTCGGGACAATACGGCGGTAGACTGGTTCGGGGCGCTGTTCGTTAACAAAGTTAGGATTATCCTTACGCACGAGCACGGATTTACATCACTTCATGGAAGCATGTATATCCGTCAGAAAAACC
+  Subsequence 2-10 (1-based inclusive): AGAGCAGAC
+  Self-checks: reverse-complement twice returns original: PASS; complement preserves length: PASS; reverse-complement preserves length: PASS; RNA -> DNA round trip: PASS
+------------------------------------------------------------
+Sequence ID: seq_02_lowercase
+  Original (5'->3')   : GCGCCACAGGCCTAGCCGCGGTCGGGCCACAGCCAGGGCCCCCCCTTGCTCCACCGCGACACAACCGGGGGTCCTCGGAGTGGGCGGGGGGTGGCACCAGGGGGCAGGGGGAGCACGCGTCCCGGGGACCGCGAACGGGCGCCATCTTACGTCCCTCGCGTCGGTGCTCAACCCCCCGAGGATGTCCCTGCCCAAGCTCCGAATTTTTTGTATCTTAATACAATTATAGCAAATCATTCAAAAAAAGTTCCGCAAATAGTTAAACCTTTAATTCGACTTTTAAAGTTTTTCGATATTAAATTAAGGCAGAACTTTCAATTAACTCATTAAACTATTGATATAATATCAACTTACATAAACTTTTTAATTATCAAAAAATATAATTCACATAATACTTAAA
+  Complement          : CGCGGTGTCCGGATCGGCGCCAGCCCGGTGTCGGTCCCGGGGGGGAACGAGGTGGCGCTGTGTTGGCCCCCAGGAGCCTCACCCGCCCCCCACCGTGGTCCCCCGTCCCCCTCGTGCGCAGGGCCCCTGGCGCTTGCCCGCGGTAGAATGCAGGGAGCGCAGCCACGAGTTGGGGGGCTCCTACAGGGACGGGTTCGAGGCTTAAAAAACATAGAATTATGTTAATATCGTTTAGTAAGTTTTTTTCAAGGCGTTTATCAATTTGGAAATTAAGCTGAAAATTTCAAAAAGCTATAATTTAATTCCGTCTTGAAAGTTAATTGAGTAATTTGATAACTATATTATAGTTGAATGTATTTGAAAAATTAATAGTTTTTTATATTAAGTGTATTATGAATTT
+  Reverse             : AAATTCATAATACACTTAATATAAAAAACTATTAATTTTTCAAATACATTCAACTATAATATAGTTATCAAATTACTCAATTAACTTTCAAGACGGAATTAAATTATAGCTTTTTGAAATTTTCAGCTTAATTTCCAAATTGATAAACGCCTTGAAAAAAACTTACTAAACGATATTAACATAATTCTATGTTTTTTAAGCCTCGAACCCGTCCCTGTAGGAGCCCCCCAACTCGTGGCTGCGCTCCCTGCATTCTACCGCGGGCAAGCGCCAGGGGCCCTGCGCACGAGGGGGACGGGGGACCACGGTGGGGGGCGGGTGAGGCTCCTGGGGGCCAACACAGCGCCACCTCGTTCCCCCCCGGGACCGACACCGGGCTGGCGCCGATCCGGACACCGCG
+  Reverse complement  : TTTAAGTATTATGTGAATTATATTTTTTGATAATTAAAAAGTTTATGTAAGTTGATATTATATCAATAGTTTAATGAGTTAATTGAAAGTTCTGCCTTAATTTAATATCGAAAAACTTTAAAAGTCGAATTAAAGGTTTAACTATTTGCGGAACTTTTTTTGAATGATTTGCTATAATTGTATTAAGATACAAAAAATTCGGAGCTTGGGCAGGGACATCCTCGGGGGGTTGAGCACCGACGCGAGGGACGTAAGATGGCGCCCGTTCGCGGTCCCCGGGACGCGTGCTCCCCCTGCCCCCTGGTGCCACCCCCCGCCCACTCCGAGGACCCCCGGTTGTGTCGCGGTGGAGCAAGGGGGGGCCCTGGCTGTGGCCCGACCGCGGCTAGGCCTGTGGCGC
+  RNA (T->U)          : GCGCCACAGGCCUAGCCGCGGUCGGGCCACAGCCAGGGCCCCCCCUUGCUCCACCGCGACACAACCGGGGGUCCUCGGAGUGGGCGGGGGGUGGCACCAGGGGGCAGGGGGAGCACGCGUCCCGGGGACCGCGAACGGGCGCCAUCUUACGUCCCUCGCGUCGGUGCUCAACCCCCCGAGGAUGUCCCUGCCCAAGCUCCGAAUUUUUUGUAUCUUAAUACAAUUAUAGCAAAUCAUUCAAAAAAAGUUCCGCAAAUAGUUAAACCUUUAAUUCGACUUUUAAAGUUUUUCGAUAUUAAAUUAAGGCAGAACUUUCAAUUAACUCAUUAAACUAUUGAUAUAAUAUCAACUUACAUAAACUUUUUAAUUAUCAAAAAAUAUAAUUCACAUAAUACUUAAA
+  DNA recovered (U->T): GCGCCACAGGCCTAGCCGCGGTCGGGCCACAGCCAGGGCCCCCCCTTGCTCCACCGCGACACAACCGGGGGTCCTCGGAGTGGGCGGGGGGTGGCACCAGGGGGCAGGGGGAGCACGCGTCCCGGGGACCGCGAACGGGCGCCATCTTACGTCCCTCGCGTCGGTGCTCAACCCCCCGAGGATGTCCCTGCCCAAGCTCCGAATTTTTTGTATCTTAATACAATTATAGCAAATCATTCAAAAAAAGTTCCGCAAATAGTTAAACCTTTAATTCGACTTTTAAAGTTTTTCGATATTAAATTAAGGCAGAACTTTCAATTAACTCATTAAACTATTGATATAATATCAACTTACATAAACTTTTTAATTATCAAAAAATATAATTCACATAATACTTAAA
+  Subsequence 2-10 (1-based inclusive): CGCCACAGG
+  Self-checks: reverse-complement twice returns original: PASS; complement preserves length: PASS; reverse-complement preserves length: PASS; RNA -> DNA round trip: PASS
+------------------------------------------------------------
+Sequence ID: seq_03_ambiguous
+  Original (5'->3')   : TCGTCCTGCGCCATTGTAACTTCCCCTATGTTGCCCTAATAAAGCTTTCAACGCACGGGTNRYKMSWBDHVNGATCGCGAAAATGCCTGATGTACTTTACAATGTCTCCTTAGGACAACGGAACGACATGAA
+  Complement          : AGCAGGACGCGGTAACATTGAAGGGGATACAACGGGATTATTTCGAAAGTTGCGTGCCCANYRMKSWVHDBNCTAGCGCTTTTACGGACTACATGAAATGTTACAGAGGAATCCTGTTGCCTTGCTGTACTT
+  Reverse             : AAGTACAGCAAGGCAACAGGATTCCTCTGTAACATTTCATGTAGTCCGTAAAAGCGCTAGNVHDBWSMKYRNTGGGCACGCAACTTTCGAAATAATCCCGTTGTATCCCCTTCAATGTTACCGCGTCCTGCT
+  Reverse complement  : TTCATGTCGTTCCGTTGTCCTAAGGAGACATTGTAAAGTACATCAGGCATTTTCGCGATCNBDHVWSKMRYNACCCGTGCGTTGAAAGCTTTATTAGGGCAACATAGGGGAAGTTACAATGGCGCAGGACGA
+  RNA (T->U)          : UCGUCCUGCGCCAUUGUAACUUCCCCUAUGUUGCCCUAAUAAAGCUUUCAACGCACGGGUNRYKMSWBDHVNGAUCGCGAAAAUGCCUGAUGUACUUUACAAUGUCUCCUUAGGACAACGGAACGACAUGAA
+  DNA recovered (U->T): TCGTCCTGCGCCATTGTAACTTCCCCTATGTTGCCCTAATAAAGCTTTCAACGCACGGGTNRYKMSWBDHVNGATCGCGAAAATGCCTGATGTACTTTACAATGTCTCCTTAGGACAACGGAACGACATGAA
+  Subsequence 2-10 (1-based inclusive): CGTCCTGCG
+  Self-checks: reverse-complement twice returns original: PASS; complement preserves length: PASS; reverse-complement preserves length: PASS; RNA -> DNA round trip: PASS
+------------------------------------------------------------
+Sequence ID: seq_05_repeats
+  Original (5'->3')   : ATGAAACCCGGGTTTTAAATATATATATATTAACGCAAGTAGTATAGGGCCGCGCCAGCACAGCAGCAGCAGCAGCAGCAGCAGGGATCCTTCACAACACGAGAGTGAGCTATTGTATCTTATTACTATCGAATTCTATAGAATTCTAGTACGCAAATGTATAGGCTGGTATGCTC
+  Complement          : TACTTTGGGCCCAAAATTTATATATATATAATTGCGTTCATCATATCCCGGCGCGGTCGTGTCGTCGTCGTCGTCGTCGTCGTCCCTAGGAAGTGTTGTGCTCTCACTCGATAACATAGAATAATGATAGCTTAAGATATCTTAAGATCATGCGTTTACATATCCGACCATACGAG
+  Reverse             : CTCGTATGGTCGGATATGTAAACGCATGATCTTAAGATATCTTAAGCTATCATTATTCTATGTTATCGAGTGAGAGCACAACACTTCCTAGGGACGACGACGACGACGACGACGACACGACCGCGCCGGGATATGATGAACGCAATTATATATATATAAATTTTGGGCCCAAAGTA
+  Reverse complement  : GAGCATACCAGCCTATACATTTGCGTACTAGAATTCTATAGAATTCGATAGTAATAAGATACAATAGCTCACTCTCGTGTTGTGAAGGATCCCTGCTGCTGCTGCTGCTGCTGCTGTGCTGGCGCGGCCCTATACTACTTGCGTTAATATATATATATTTAAAACCCGGGTTTCAT
+  RNA (T->U)          : AUGAAACCCGGGUUUUAAAUAUAUAUAUAUUAACGCAAGUAGUAUAGGGCCGCGCCAGCACAGCAGCAGCAGCAGCAGCAGCAGGGAUCCUUCACAACACGAGAGUGAGCUAUUGUAUCUUAUUACUAUCGAAUUCUAUAGAAUUCUAGUACGCAAAUGUAUAGGCUGGUAUGCUC
+  DNA recovered (U->T): ATGAAACCCGGGTTTTAAATATATATATATTAACGCAAGTAGTATAGGGCCGCGCCAGCACAGCAGCAGCAGCAGCAGCAGCAGGGATCCTTCACAACACGAGAGTGAGCTATTGTATCTTATTACTATCGAATTCTATAGAATTCTAGTACGCAAATGTATAGGCTGGTATGCTC
+  Subsequence 2-10 (1-based inclusive): TGAAACCCG
+  Self-checks: reverse-complement twice returns original: PASS; complement preserves length: PASS; reverse-complement preserves length: PASS; RNA -> DNA round trip: PASS
+------------------------------------------------------------
+Sequence ID: seq_06_short
+  Original (5'->3')   : ATGCGCGCATAT
+  Complement          : TACGCGCGTATA
+  Reverse             : TATACGCGCGTA
+  Reverse complement  : ATATGCGCGCAT
+  RNA (T->U)          : AUGCGCGCAUAU
+  DNA recovered (U->T): ATGCGCGCATAT
+  Subsequence 2-10 (1-based inclusive): TGCGCGCAT
+  Self-checks: reverse-complement twice returns original: PASS; complement preserves length: PASS; reverse-complement preserves length: PASS; RNA -> DNA round trip: PASS
+------------------------------------------------------------
+
+##### Task 4 - Motifs #####
+TASK 4 - PATTERN MATCHING AND MOTIF DETECTION REPORT
+============================================================
+Motifs: GAATTC, ATG, TATA, GGATCC
+
+Sequence ID: seq_01_normal   (length 376; mode: overlapping; 1-based start positions)
+  Motif GAATTC [reverse-complement palindrome]: 1 match(es); naive vs KMP agree
+    positions: 251
+  Motif ATG: 6 match(es); naive vs KMP agree
+    positions: 135, 153, 165, 228, 347, 355
+  Motif TATA [reverse-complement palindrome]: 1 match(es); naive vs KMP agree
+    positions: 358
+  Motif GGATCC [reverse-complement palindrome]: 0 match(es); naive vs KMP agree
+  Reverse-complement palindromes (even length 4-12): 16
+    27-30: CTAG
+    68-71: TCGA
+    89-92: ACGT
+    98-101: TTAA
+    134-137: CATG
+    164-167: CATG
+    217-220: AATT
+    251-256: GAATTC
+    252-255: AATT
+    286-289: GCGC
+    295-300: GTTAAC
+    296-299: TTAA
+    346-349: CATG
+    354-357: CATG
+    358-361: TATA
+    359-362: ATAT
+  Tandem repeats (unit 1-6, >= 3 copies): 21
+    34-36: unit A x3
+    63-65: unit G x3
+    81-83: unit A x3
+    92-94: unit T x3
+    95-97: unit C x3
+    100-103: unit A x4
+    112-115: unit G x4
+    117-120: unit T x4
+    125-128: unit A x4
+    130-133: unit A x4
+    139-141: unit C x3
+    171-175: unit T x5
+    187-189: unit T x3
+    191-194: unit A x4
+    203-205: unit T x3
+    216-218: unit A x3
+    257-259: unit G x3
+    283-286: unit G x4
+    301-303: unit A x3
+    334-336: unit T x3
+    370-374: unit A x5
+------------------------------------------------------------
+Sequence ID: seq_02_lowercase   (length 400; mode: overlapping; 1-based start positions)
+  Motif GAATTC [reverse-complement palindrome]: 0 match(es); naive vs KMP agree
+  Motif ATG: 1 match(es); naive vs KMP agree
+    positions: 182
+  Motif TATA [reverse-complement palindrome]: 3 match(es); naive vs KMP agree
+    positions: 225, 339, 379
+  Motif GGATCC [reverse-complement palindrome]: 0 match(es); naive vs KMP agree
+  Reverse-complement palindromes (even length 4-12): 49
+    1-4: GCGC
+    8-13: AGGCCT
+    9-12: GGCC
+    12-15: CTAG
+    16-21: CCGCGG
+    17-20: CGCG
+    25-28: GGCC
+    36-41: GGGCCC
+    37-40: GGCC
+    55-58: CGCG
+    65-68: CCGG
+    115-120: ACGCGT
+    116-119: CGCG
+    121-126: CCCGGG
+    122-125: CCGG
+    130-133: CGCG
+    138-143: GGCGCC
+    139-142: GCGC
+    149-152: ACGT
+    157-160: CGCG
+    195-198: AGCT
+    202-205: AATT
+    215-218: TTAA
+    222-225: AATT
+    225-228: TATA
+    ... 24 more (see CSV)
+  Tandem repeats (unit 1-6, >= 3 copies): 31
+    24-26: unit G x3
+    36-38: unit G x3
+    39-45: unit C x7
+    67-71: unit G x5
+    82-84: unit G x3
+    86-91: unit G x6
+    100-104: unit G x5
+    107-111: unit G x5
+    121-123: unit C x3
+    124-127: unit G x4
+    137-139: unit G x3
+    153-155: unit C x3
+    172-177: unit C x6
+    186-188: unit C x3
+    191-193: unit C x3
+    204-209: unit T x6
+    231-233: unit A x3
+    240-246: unit A x7
+    254-256: unit A x3
+    262-264: unit A x3
+    267-269: unit T x3
+    278-281: unit T x4
+    282-284: unit A x3
+    286-290: unit T x5
+    298-300: unit A x3
+    ... 6 more (see CSV)
+------------------------------------------------------------
+Sequence ID: seq_03_ambiguous   (length 132; mode: overlapping; 1-based start positions)
+  Motif GAATTC [reverse-complement palindrome]: 0 match(es); naive vs KMP agree
+  Motif ATG: 5 match(es); naive vs KMP agree
+    positions: 28, 83, 90, 102, 128
+  Motif TATA [reverse-complement palindrome]: 0 match(es); naive vs KMP agree
+  Motif GGATCC [reverse-complement palindrome]: 0 match(es); naive vs KMP agree
+  Reverse-complement palindromes (even length 4-12): 10
+    8-11: GCGC
+    41-48: AAAGCTTT
+    42-47: AAGCTT
+    43-46: AGCT
+    68-71: BDHV
+    73-76: GATC
+    75-80: TCGCGA
+    76-79: CGCG
+    92-95: GTAC
+    127-130: CATG
+  Tandem repeats (unit 1-6, >= 3 copies): 7
+    23-26: unit C x4
+    34-36: unit C x3
+    41-43: unit A x3
+    46-48: unit T x3
+    57-59: unit G x3
+    80-83: unit A x4
+    96-98: unit T x3
+------------------------------------------------------------
+Sequence ID: seq_05_repeats   (length 176; mode: overlapping; 1-based start positions)
+  Motif GAATTC [reverse-complement palindrome]: 2 match(es); naive vs KMP agree
+    positions: 131, 141
+  Motif ATG: 3 match(es); naive vs KMP agree
+    positions: 1, 157, 171
+  Motif TATA [reverse-complement palindrome]: 7 match(es); naive vs KMP agree
+    positions: 20, 22, 24, 26, 43, 137, 160
+  Motif GGATCC [reverse-complement palindrome]: 1 match(es); naive vs KMP agree
+    positions: 85
+  Reverse-complement palindromes (even length 4-12): 55
+    4-15: AAACCCGGGTTT
+    5-14: AACCCGGGTT
+    6-13: ACCCGGGT
+    7-12: CCCGGG
+    8-11: CCGG
+    14-19: TTTAAA
+    15-18: TTAA
+    19-22: ATAT
+    19-24: ATATAT
+    19-26: ATATATAT
+    19-28: ATATATATAT
+    19-30: ATATATATATAT
+    20-23: TATA
+    20-25: TATATA
+    20-27: TATATATA
+    20-29: TATATATATA
+    21-24: ATAT
+    21-26: ATATAT
+    21-28: ATATATAT
+    21-30: ATATATATAT
+    22-25: TATA
+    22-27: TATATA
+    22-29: TATATATA
+    23-26: ATAT
+    23-28: ATATAT
+    ... 30 more (see CSV)
+  Tandem repeats (unit 1-6, >= 3 copies): 9
+    4-6: unit A x3
+    7-9: unit C x3
+    10-12: unit G x3
+    13-16: unit T x4
+    17-19: unit A x3
+    20-29: unit TA x5
+    47-49: unit G x3
+    61-84: unit CAG x8
+    155-157: unit A x3
+------------------------------------------------------------
+Sequence ID: seq_06_short   (length 12; mode: overlapping; 1-based start positions)
+  Motif GAATTC [reverse-complement palindrome]: 0 match(es); naive vs KMP agree
+  Motif ATG: 1 match(es); naive vs KMP agree
+    positions: 1
+  Motif TATA [reverse-complement palindrome]: 0 match(es); naive vs KMP agree
+  Motif GGATCC [reverse-complement palindrome]: 0 match(es); naive vs KMP agree
+  Reverse-complement palindromes (even length 4-12): 7
+    1-10: ATGCGCGCAT
+    2-9: TGCGCGCA
+    3-6: GCGC
+    3-8: GCGCGC
+    4-7: CGCG
+    5-8: GCGC
+    9-12: ATAT
+  Tandem repeats (unit 1-6, >= 3 copies): 1
+    3-8: unit GC x3
+------------------------------------------------------------
+
+BENCHMARK - NAIVE vs KMP (median of repeated runs, time.perf_counter, search only)
+scenario       size  motif   naive (ms)    KMP (ms)  matches  agree
+random         1000      8        0.066       0.055        1   True
+random        10000      8        0.709       0.649        1   True
+repeat         1000     20        0.719       0.078        0   True
+repeat        10000     20        9.256       0.993        0   True
+
+Discussion: theory says naive is O(nm) and KMP is O(n+m). On random DNA mismatches occur
+after ~1.3 comparisons, so naive is effectively O(n) and the two are close; KMP's extra
+bookkeeping can even make it slower in pure Python. On the repetitive adversarial input
+naive pays ~m comparisons per position while KMP stays linear, so the gap widens with m.
+Other effects: interpreter overhead, caching, timer resolution and machine load.
+Benchmark plot: D:\IUT\7th Semester\CSE 4754\220041160_Lab1\dna_toolkit\output\plots\benchmark_naive_vs_kmp.png
+

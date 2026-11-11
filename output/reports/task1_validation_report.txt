@@ -1,0 +1,48 @@
+TASK 1 - SEQUENCE VALIDATION REPORT
+============================================================
+Alphabet: 15 IUPAC DNA symbols (A,T,G,C + R,Y,S,W,K,M,B,D,H,V,N).
+Ambiguous symbols are VALID; characters outside the alphabet are INVALID.
+Positions are 1-based.
+
+Sequence ID : seq_01_normal
+Description : Balanced random sequence
+Length      : 376
+Status      : Valid
+Ambiguous   : 0
+Invalid     : none
+------------------------------------------------------------
+Sequence ID : seq_02_lowercase
+Description : GC-rich then AT-rich, lowercase
+Length      : 400
+Status      : Valid
+Ambiguous   : 0
+Invalid     : none
+------------------------------------------------------------
+Sequence ID : seq_03_ambiguous
+Description : Contains IUPAC ambiguity codes
+Length      : 132
+Status      : Valid with ambiguity
+Ambiguous   : 12 symbol(s) [Bx1, Dx1, Hx1, Kx1, Mx1, Nx2, Rx1, Sx1, Vx1, Wx1, Yx1] at N@61, R@62, Y@63, K@64, M@65, S@66, W@67, B@68, D@69, H@70, V@71, N@72
+Invalid     : none
+------------------------------------------------------------
+Sequence ID : seq_04_invalid
+Description : Contains invalid characters X and Z
+Length      : 69
+Status      : Invalid
+Ambiguous   : 1 symbol(s) [Nx1] at N@5
+Invalid     : 2 character(s): 'X' at position 6, 'Z' at position 49
+------------------------------------------------------------
+Sequence ID : seq_05_repeats
+Description : Tandem repeats, palindromes, ORF
+Length      : 176
+Status      : Valid
+Ambiguous   : 0
+Invalid     : none
+------------------------------------------------------------
+Sequence ID : seq_06_short
+Description : Short sequence
+Length      : 12
+Status      : Valid
+Ambiguous   : 0
+Invalid     : none
+------------------------------------------------------------

@@ -1,0 +1,5 @@
+scenario,size,motif_length,naive_ms,kmp_ms,matches,results_agree
+random,1000,8,0.066,0.055,1,True
+random,10000,8,0.709,0.649,1,True
+repeat,1000,20,0.719,0.078,0,True
+repeat,10000,20,9.256,0.993,0,True
