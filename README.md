@@ -2,7 +2,7 @@
 
 Menu-driven Python toolkit covering Tasks 1-4: input/validation, composition and
 sliding windows, sequence transformations, and motif detection (naive vs KMP).
-All core algorithms are implemented from scratch (no Biopython needed).
+All core algorithms are implemented from scratch.
 
 ## Installation
 Python 3.10+ and:
